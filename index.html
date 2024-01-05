@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Real Estate</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h4><i class="bi bi-house-door-fill"></i> House</h4>
+        <div class="right_bx">
+          <ul>
+            <li>
+              <a href="#">Support</a>
+              <a href="#">Language</a>
+              <a href="#">List Your Property</a>
+            </li>
+          </ul>
+          <div class="account_bx">
+            <i class="bi bi-app-indicator"></i>
+            <i class="bi bi-person"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="cont_bx">
+          <h1>
+            Modern <br />
+            house
+          </h1>
+          <p>3 bedrooms, 1 kitchen, 2 bathrooms</p>
+          <div class="weather">
+            <h6>42 °C <span>Very Hot</span></h6>
+          </div>
+          <div class="btns_cont">
+            <i class="bi bi-arrow-left" id="btn_left"></i>
+            <i class="bi bi-arrow-right" id="btn_right"></i>
+          </div>
+          <div class="images_bx">
+            <div class="card">
+              <img src="./img/pexels-pixabay-261102.jpg" alt="banner-image-one" />
+            </div>
+            <div class="card">
+              <img src="./img/pexels-curtis-adams-4290722.jpg" alt="banner-image-two" />
+            </div>
+            <div class="card">
+              <img src="./img/pexels-max-rahubovskiy-7031413.jpg" alt="banner-image-three" />
+              <h6 id="h6">+6</h6>
+            </div>
+          </div>
+        </div>
+        <div class="choose_bx">
+          <div class="stay_bx">
+            <button><i class="bi bi-house-door-fill"></i></button>
+            <button><i class="bi bi-star-fill"></i></button>
+            <button><i class="bi bi-tv-fill"></i></button>
+          </div>
+          <div class="select">
+            <div class="card">
+              <h5>City</h5>
+              <input type="text" value="Lagos" />
+              <input type="text" value="Nigeria" />
+            </div>
+            <div class="card">
+              <h5>People</h5>
+              <input type="text" value="4 People" id="People" />
+              <button id="people_less">Less</button>
+              <button id="people_more">More</button>
+            </div>
+            <div class="card">
+              <div class="left_box">
+                <h5>CHECK IN</h5>
+                <div class="date">
+                  <h3 id="checkin_data">Sat, 05 Jan</h3>
+                  <input type="date" id="checkin" value="2023-05-01" />
+                  <i class="bi bi-calendar2-week-fill"></i>
+                </div>
+                <button id="checkin_less">Less</button>
+                <button id="checkin_more">More</button>
+              </div>
+              <div class="right_box">
+                <h5>CHECK OUT</h5>
+                <div class="date">
+                  <h3 id="checkout_data">Sun, 06 Jan</h3>
+                  <input type="date" id="checkout" value="2023-05-01" />
+                  <i class="bi bi-calendar2-week-fill"></i>
+                </div>
+                <button id="checkout_less">Less</button>
+                <button id="checkout_more">More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="map">
+      <div class="address_bx">
+        <div class="location_bx">
+          <h6>Location</h6>
+          <h5>Bode Thomas House</h5>
+        </div>
+        <i class="bi bi-fullscreen-exit"></i>
+      </div>
+      <iframe
+        src="https://my.atlist.com/map/ee5f1241-ac1b-4635-b893-25b32090b2d9?share=true"
+        allow="geolocation 'self' https://my.atlist.com"
+        width="100%"
+        height="400px"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="home">
+      <div class="title_button">
+        <h2>Explore more houses</h2>
+        <button>See All <i class="bi bi-arrow-right"></i></button>
+      </div>
+      <div class="home_bx">
+        <div class="card">
+          <img src="./img/pexels-ahmed-agili-14459280.jpg" alt="home-image-one" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Lagos Island</h4>
+              <p>Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/pexels-tristan-paolo-4276613.jpg" alt="home-image-two" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Lagos Mainland</h4>
+              <p>Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/pexels-erik-mclean-7475633.jpg" alt="home-image-three" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Abuja</h4>
+              <p>Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/pexels-natália-oliveira-3786322.jpg" alt="home-image-four" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Port Harcourt</h4>
+              <p>Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/pexels-eky-rima-nurya-ganda-15267020.jpg" alt="home-image-five" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Lagos</h4>
+              <p>Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2>Our Service</h2>
+      <div class="box">
+        <div class="img_bx">
+          <img src="./img/pexels-max-rahubovskiy-8134745.jpg" alt="service-image"/>
+        </div>
+        <div class="cont_box">
+          <h6><span>OUR SERVICE</span></h6>
+          <h1>
+            Comfort is our <br />
+            Top priority for you
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            inventore ab unde velit iste obcaecati ducimus.
+          </p>
+          <ul>
+            <li>Premium national marketing</li>
+            <li class="pmr-5">Marged viewing</li>
+            <li>Feco, no obligation valuctions</li>
+            <li class="pe-5">Local area knowladge</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-icon">
+        <h4><i class="bi bi-house-door-fill"></i></h4>
+      </div>
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by HydeCode17 | All Right Reserved.</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
